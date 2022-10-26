@@ -16,8 +16,8 @@ app.set("view engine","hbs");
 
 
 app.get("/",(req,res)=>{
-    res.sendFile(path.join(path.join(__dirname,'../public/index.js')));
-    // res.render('MagicNotes');
+    // res.sendFile(path.join(path.join(__dirname,'../public/index.js')));
+    res.render('MagicNotes');
 });
 
 app.listen(port,()=>{
